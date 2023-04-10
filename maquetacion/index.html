@@ -1,36 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xacademy Clase 1 maquetacion</title>
     <style>
+        
         body {
             margin: 0;
         }
+
         p {
+
             margin-right: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 13px;
+            letter-spacing: ;
+            text-transform: none;
+            font-style: normal;
         }
+        p:hover {
+            color: blue
+        }
+
+        .insta{
+            width: 2em;
+            height: 2em;
+        }
+        .insta:hover {
+            color: blue
+        }
+        .linkedin {
+            padding:10px;
+            width: 1em;
+            height: 1em;
+        }
+        .linkedin:hover { 
+            color: blue
+        }
+
+        
         h1 {
             margin: 0px 400px;
             text-align: center;
         }
+
         button.redondo {
             background-color: white;
-            border: 1px solid black;
+            border: 2px solid black;
             border-radius: 25px;
             padding: 0px 20px;
             height: 32px;
         }
+
+        button.redondo:hover {
+            background-color: black;
+            color: white;
+        }
+
+
+        button.redondo2 {
+            background-color: white;
+            border: 1px solid blue;
+            border-radius: 25px;
+            padding: 0px 20px;
+            height: 32px;
+            color: blue;
+        }
+
+        button.redondo2:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        div#introduction {
+
+            padding-top: 90px;
+            margin-top: 0px;
+            padding-right: 30px;
+            padding-bottom: 70px;
+            margin-bottom: 0px;
+            padding-left: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        div#introduction-text {
+
+            align-self: center;
+            margin: 0px;
+            font-size: 1em;
+            
+        }
+
+        .texto {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align:center;
+            font-size: 28px;
+            width: 576px;
+            height: 125px;
+            font-weight: 700;
+        }
+
         div#introduction-actions {
             display: flex;
             justify-content: center;
+            margin-top: 25px;
         }
     </style>
 </head>
+
 <body>
-    <div id="header" style="border-bottom: 1px solid gray; display: flex; padding: 10px 100px; justify-content: space-between">
+    <div id="header"
+        style="border-bottom: 1px solid gray; display: flex; padding: 10px 100px; justify-content: space-between">
         <div id="header-left">
             <img src="logo.svg">
         </div>
@@ -41,16 +128,21 @@
             <p>Alianzas</p>
             <p>Contacto</p>
             <button class="redondo">Sumate +</button>
+            <img class="insta" src="insta.jpg" alt="instagram">
+            <img class="linkedin" src="link.png" alt="linkedin">
         </div>
     </div>
-    <div id="introduction" style="padding: 48px;">
+    <div id="introduction">
         <div id="introduction-text">
-            <h1>Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la tecnología.</h1>
+            <h1 class="texto">Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a
+                través de la
+                tecnología.</h1>
         </div>
-        <div id="introduction-actions" style="margin-top: 25px;">
+        <div id="introduction-actions">
             <button class="redondo">Contactanos -></button>
-            <button class="redondo" style="margin-left: 14px;">Sumate +</button>
+            <button class="redondo2" style="margin-left: 14px;">Sumate +</button>
         </div>
     </div>
 </body>
+
 </html>
